@@ -1,0 +1,256 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+/* font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif; */
+
+body {
+  font-family: Roboto;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+
+/* site header */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.accent-logo {
+  color: #2196f3;
+}
+.second-accent-logo {
+  color: #000000;
+}
+.menu-nav {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.menu-nav .link:active {
+  color: var(--accent-color);
+}
+.menu-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  list-style-type: none;
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+.contacts:hover {
+  color: var(--accent-color);
+}
+.contacts-list
+/* hero */
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* когда будет задний фон изменю на белый */
+  color: royalblue;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* button */
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+
+  letter-spacing: 0.06em;
+}
+
+/* top section */
+.list-features {
+  list-style-type: none;
+}
+
+.features {
+  list-style-type: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* features */
+.section-features-title {
+  color: #fff;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* occupation */
+
+.list-occupation {
+  list-style-type: none;
+}
+
+.occupation {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* our-team */
+
+.list-our-team {
+  list-style-type: none;
+}
+
+.our-team {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.our-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.our-team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.buttom-part {
+  background: #2f303a;
+}
+
+.second-accent-logofooter {
+  color: #ffffff;
+}
+
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.list-tooter {
+  list-style-type: none;
+}
+
+.link-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+
+.portfolio-title {
+  color: #ffffff;
+}
+
+.list-portfolio {
+  list-style-type: none;
+}
+
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background: #f5f4fa;
+  cursor: pointer;
+}
+.button-portfolio:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.list-portfolio-img {
+  list-style-type: none;
+}
+
+.portfolio-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
