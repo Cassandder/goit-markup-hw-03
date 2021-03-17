@@ -11,9 +11,12 @@ body {
   font-family: Roboto;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  list-style-type: none;
-  list-style: none;
   text-decoration: none;
+  /* list-style-type: none;
+  list-style: none; */
+}
+img {
+  display: block;
 }
 
 h1,
@@ -23,11 +26,20 @@ h4,
 h5,
 h6 {
   color: var(--title-text-color);
+  margin: 0;
 }
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -35,13 +47,14 @@ h6 {
 }
 
 
-/* site header */
+/*======== site header ===========*/
 
 .header-nav {
   
   display: flex;
   justify-self: start;
   align-items: center;
+  padding: 24px 0px;
 }
 
 .header-top {
@@ -74,12 +87,14 @@ h6 {
   text-decoration: none;
   list-style-type: none;
 }
-.menu-nav .link :last-child {
-  margin: 0px;
+.menu-nav-link {
+  margin-right: 50px;
+}
+.menu-nav-link:last-child {
+  margin-right: 0;
 }
 
 .link {
-  margin-right: 50px;
   color: var(--title-text-color);
   text-decoration: none;
   cursor: pointer;
@@ -103,15 +118,23 @@ h6 {
 .active {
   color: var(--accent-color);
 }
+/*===== contacts section ============*/
 
 .contacts-list {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
+  padding: 32px 0px;
+}
+
+.contacts-list-item {
+  margin-left: 50px;
+}
+.contacts-list-item:first-child {
+  margin-left: 0;
 }
 
 .contacts {
-  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -123,33 +146,38 @@ h6 {
 .contacts:hover {
   color: var(--accent-color);
 }
-.contacts-list
 
-/* hero */
+
+/*============= MAIN =================*/
 
 .service {
-  text-align: center;
+  background: #2F303A;
 }
+
 .hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+.hero-titel {
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* когда будет задний фон изменю на белый */
-  color: royalblue;
-
-  
+  color: var(--primary-white-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-/* button */
+/*================ button ==============*/
+
 .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   border: 0px;
   border-radius: 4px;
-  position: relative;
   padding: 10px 32px;
-  left: 50%;
-  transform: translate(-50%, 0);
   text-align: center;
   font-weight: bold;
   font-size: 16px;
@@ -167,13 +195,15 @@ h6 {
   border-radius: 4px;
 }
 
-/* top section */
+/*=========== top section ==========*/
+
+.features {
+  padding: 94px 0px;
+}
+
 .list-features {
   display: flex;
   list-style-type: none;
-  margin: 0px 0px 94px;
-  padding: 0px;
-  
 }
 
 .list-features-item {
@@ -184,14 +214,9 @@ h6 {
    margin-left: 0px;
 }
 
-.features {
-  
-  list-style-type: none;
-  text-decoration: none;
-  list-style: none;
-}
 
-/* features */
+/*========= features ============*/
+
 .section-features-title {
   color: #fff;
 }
@@ -209,9 +234,11 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  max-width: 270px;
+
 }
 
-/* occupation */
+/*========= occupation ==========*/
 
 .list-occupation {
   display: flex;
@@ -242,7 +269,7 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-/* our-team */
+/*============= our-team =============*/
 
 .our-team-section {
   padding: 94px 0px;
@@ -254,10 +281,18 @@ h6 {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  
 }
 
 .our-team-item {
   margin-left: 30px;
+  box-sizing: border-box;
+
+  height: 368px;
+  width: 270;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: var(--primary-white-color);
 }
 
 .our-team-item:first-child {
@@ -274,6 +309,7 @@ h6 {
 }
 
 .our-team-title {
+  margin-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -282,16 +318,16 @@ h6 {
 }
 
 .our-team-text {
+  margin-top: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-/* footer */
+/*============= footer ==========*/
 
 .bottom-part {
-  height: 252px;
   background: #2f303a;
 }
 
@@ -322,8 +358,7 @@ h6 {
 }
 
 .list-tooter {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 60px;
   padding: 0px;
   list-style-type: none;
 }
@@ -345,6 +380,10 @@ h6 {
 
 /*=========== portfolio ==============*/
 
+.portfolio-main {
+  padding: 94px 0px;
+}
+
 .portfolio-title {
   color: #ffffff;
 }
@@ -352,9 +391,6 @@ h6 {
 .list-portfolio {
   display: flex;
   justify-content: center;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   list-style-type: none;
 }
 
@@ -390,16 +426,26 @@ h6 {
 .list-portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  margin: 34px 0px 94px 0px;
+  margin: 34px 0px;
   padding: 0px;
   list-style-type: none;
+  
 }
 
 .list-portfolio-img-item {
   margin-right: 30px;
+  margin-top: 30px;
+  width: 370px;
+  height: 404px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
 }
 .list-portfolio-img-item:nth-child(3n) {
   margin-right: -30px;
+}
+.list-portfolio-img-item:nth-child(-n + 3) {
+  margin-top: 0;
 }
 
 .portfolio-subtitle {
